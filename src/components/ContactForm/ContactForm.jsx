@@ -2,6 +2,7 @@ import { IoPersonAddSharp } from "react-icons/io5";
 import { BsFillTelephonePlusFill } from "react-icons/bs";
 import { ErrorMessage } from "formik";
 import * as Yup from "yup";
+import { nanoid } from "nanoid";
 import { useId } from "react";
 import css from "./ContactForm.module.css";
 import { Formik, Form, Field } from "formik";
@@ -24,7 +25,7 @@ export default function ContactForm({ onAdd }) {
     console.log(values);
     actions.resetForm();
     onAdd({
-      id: Date.now(),
+      id: nanoid(),
       name: values.name,
       number: values.number,
     });
