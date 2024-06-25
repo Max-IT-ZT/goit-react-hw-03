@@ -1,17 +1,17 @@
 .contactItem {
   display: flex;
   min-width: 250px;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   border: 1px solid black;
   padding: 10px;
   border-radius: 10px;
-  background-color: rgba(136, 139, 194, 0.54);
+  background-color: rgba(170, 170, 170, 0.628);
 }
 .contactItem:hover,
 .contactItem:focus {
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  background-color: rgba(136, 139, 194, 0.829);
+  background-color: rgba(214, 214, 214, 0.884);
 }
 .contactText {
   display: flex;
@@ -19,12 +19,12 @@
   flex-direction: column;
 }
 .contactName {
-  justify-content: center;
+  display: flex;
   align-items: center;
   gap: 8px;
 }
 .contactNumber {
-  justify-content: center;
+  display: flex;
   align-items: center;
   gap: 8px;
 }
@@ -36,7 +36,7 @@
   padding: 5px 10px;
   border-radius: 10px;
   border: 1px solid black;
-  background-color: rgba(250, 53, 53, 0.621);
+  background-color: rgba(250, 53, 53, 0.423);
 }
 .contactBtn:hover,
 .contactBtn:focus {

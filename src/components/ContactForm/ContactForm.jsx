@@ -1,5 +1,4 @@
 import { IoPersonAddSharp } from "react-icons/io5";
-import { BsFillTelephonePlusFill } from "react-icons/bs";
 import { ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { nanoid } from "nanoid";
@@ -43,7 +42,7 @@ export default function ContactForm({ onAdd }) {
       <Form className={css.form}>
         <span className={css.fieldSpan}>
           <label className={css.fieldLabel} htmlFor={nameId}>
-            <IoPersonAddSharp /> Name ;
+            Name ;
           </label>
           <Field
             className={css.field}
@@ -56,7 +55,7 @@ export default function ContactForm({ onAdd }) {
         <ErrorMessage className={css.fieldError} name="name" component="span" />
         <span className={css.fieldSpan}>
           <label className={css.fieldLabel} htmlFor={numberId}>
-            <BsFillTelephonePlusFill /> Number ;
+            Number ;
           </label>
           <Field
             className={css.field}
@@ -72,7 +71,7 @@ export default function ContactForm({ onAdd }) {
           component="span"
         />
         <button className={css.btn} type="submit">
-          Add contact
+          <IoPersonAddSharp /> Add contact
         </button>
       </Form>
     </Formik>
